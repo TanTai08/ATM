@@ -140,7 +140,7 @@ class DatabaseManager {
 			if (resultSet.next()) {
 				String tenKH = resultSet.getString("TenKH");
 				String stk = resultSet.getString("STK");
-				double soDu = resultSet.getDouble("SoDu");
+				int soDu = resultSet.getInt("SoDu");
 
 				JOptionPane.showMessageDialog(null, "Thông tin khách hàng:\nTên khách hàng: " + tenKH
 						+ "\nSố tài khoản: " + stk + "\nSố dư: " + soDu);
