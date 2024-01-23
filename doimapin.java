@@ -82,7 +82,7 @@ public class doimapin extends JFrame {
 				
 				String url = "jdbc:mysql://127.0.0.1:3306/atm";
 				String username = "root";
-				String password = "123456789abcd";
+				String password = "taihoang2608!";
 
 				try {
 					Connection conn = DriverManager.getConnection(url, username, password);

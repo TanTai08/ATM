@@ -127,7 +127,7 @@ public class trangchu extends JFrame {
 class DatabaseManager {
 	private static final String URL = "jdbc:mysql://127.0.0.1:3306/atm";
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "123456789abcd";
+	private static final String PASSWORD = "taihoang2608!";
 
 	public static void getAccountInfo(String accountName) {
 		try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
@@ -164,7 +164,7 @@ class DatabaseManager {
 			ResultSet resultSet = statement.executeQuery();
 
 			if (resultSet.next()) {
-				double soDu = resultSet.getDouble("SoDu");
+				int soDu = resultSet.getInt("SoDu");
 				
 				JOptionPane.showMessageDialog(null, "Số Dư Tài Khoản là : " + soDu);
 			} else {
